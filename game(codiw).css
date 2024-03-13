@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',Verdana;
+    
+}
+
+body {
+    background-color: gainsboro; 
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav_links {
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative; 
+}
+.nav_links ul li a{
+    color: darkmagenta;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav_links ul li ::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: darkmagenta;
+    display: block;
+    margin: auto;
+    transition:0.5s;
+
+}
+.nav_links ul li:hover ::after{
+    width: 100%;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    text-transform: none;
+    color: darkmagenta;
+    font-size: 3em;
+}
+
+.gameimage {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+.gameimage  img{
+    border-radius: 10px;
+    height: 600;
+}
+
+/*.gameinfo {
+    text-align:center;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana;
+    font-size: 24px;
+    border: 1px beige;
+}
+*/
+
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+.downloadtab {
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-size: 18px;
+   
+}
+
+.downloadtab a{
+    text-decoration: none;
+    color: darkmagenta;
+    transition: transform 0.5s;
+}
+
+.downloadtab a:hover,
+.downloadtab a:active {
+    color:black;
+    font-size: 30px;
+    transform: translateY(-10px);
+}
+
+.commentbox {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.commentbox textarea {
+    width: 100%;
+    height: 80px;
+    resize: none;
+    margin-bottom: 10px;
+
+}
+.commentbox button {
+    background-color: darkmagenta;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+  
+  .button {
+    /* Button styling */
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Add space above the button */
+  }
+  
+  .button:hover {
+    background-color: #286090;
+  }
+  
+
+.button a:hover,
+.button a:active {
+    color: black;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 20px;
+}
+
+.images img {
+    margin: 0 20px;
+}
+
+.icon {
+    /* Centering using flexbox (modern browsers and best practices) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* Centering using CSS Grid (modern browsers and more flexibility) */
+    /* grid-template-columns: 1fr;
+    grid-justify-items: center;
+    grid-align-items: center; */
+  
+    /* Centering using absolute positioning (older browsers and legacy code) */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+  
+    /* Fallback for older browsers without flexbox or grid */
+    width: ''; /* Restrict unnecessary horizontal stretching */
+    margin: 0 auto;
+  
+    /* Optional styling */
+    padding: 20px; /* Add some breathing room around the icon */
+    border: 1px solid #eee; /* Simple border for definition */
+    border-radius: 5px; /* Subtle rounded corners */
+  }
+  
+  .icon img {
+    /* Maintain image aspect ratio and prevent distortions */
+    max-width: 100%;
+    height: auto;
+  }
+
+.container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+    font-size: 18px;
+}
+  
+
+.btn {
+    background-color: darkmagenta;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: black;
+    
+  }
+  
+  .system-requirements {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  .notes {
+    font-size: smaller;
+    margin-top: 10px;
+  }
+
+  .install {
+    list-style: none;
+  }
+  
+  .winrar {
+    text-decoration: none;
+    color: darkmagenta;
+    font-weight: 600;
+  }
+
+  .winrar:hover {
+    color: black;
+  }
+
+  /*new section for recommended games*/
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    
+
+}
+
+  
+.row a{
+    text-decoration: none;
+    
+    
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+.gamestabs {
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+    color: black;
+    
+    
+}
+
+.gamestabs h1 {
+    color: darkmagenta;
+}
+
+.gametabscol {
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    
+    
+    
+   
+}
+
+.gametabscol::hover {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    animation: gametabscol 2s forwards;
+
+}
+
+.gametabscol:active::hover {
+    animation-play-state: running;
+}
+@keyframes gametabscol {
+    0% {
+        transform: translateX(0);   
+    }
+    100% {
+        transform: translateX(15px);
+    }
+}
+
+
+.gametabscol img {
+    width: 120%;
+    object-fit: contain;
+    /*animation: gametabscol 2s infinite alternate;*/   
+
+}
+
+.gametabscol img {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow to the transition */
+}
+
+.gametabscol img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change color and opacity as needed */
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s ease;
+}
+
+.gametabscol img:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+}
+
+.gametabscol img:hover::after {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.layer2 {
+    color: darkmagenta;
+    text-align: center;
+}
+
+.layer2:hover,
+.layer2:active a{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: larger;
+}
+

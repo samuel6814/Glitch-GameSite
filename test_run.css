@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',Verdana;
+    
+}
+
+
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(front\ page.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav_links {
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative; 
+}
+.nav_links ul li a{
+    color: beige;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav_links ul li ::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: grey;
+    display: block;
+    margin: auto;
+    transition:0.5s;
+
+}
+.nav_links ul li:hover ::after{
+    width: 100%;
+    align-items: center;
+}
+
+
+
+/*.row5 {
+    display: flex;
+    height: 88%;
+    align-items: center;
+    
+}
+
+
+.col5 {
+    flex-basis: 50%;
+}
+
+.row5 h1 {
+    color: beige;
+}
+.row5 p {
+    color: beige;
+}
+*/
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius:10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(front\ page.jpg);
+    background-size: cover;
+    transition: transform 0.5s ;
+    
+}
+
+.card1 {
+    background-image: none;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+.textbox {
+    width:90%;
+    color: beige;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}   
+
+.more a {
+    font-style: italic;
+    font-family:'Arial Narrow Bold', sans-serif;
+    color: beige;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 12px 34px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+
+
+}
+
+.textbox {
+    width:90%;
+    color: beige;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}   
+
+.more a:hover,
+.more a:active {
+    background: beige;
+    transition: 1s;
+    border: 1px solid beige; 
+    color: darkmagenta;
+}
+.textbox h1 {
+    font-size: 4em;
+    color: darkmagenta;
+}
+
+.textbox p {
+    margin: 10px 0 40px;
+    font-size: 2em;
+    color: beige;
+    
+}
+nav .fa{
+    display: none;
+}
+/* Code not working as it should
+@media(max-width: 700px){
+    .textbox h1{
+        font-size: 20px;
+    }
+    .nav_links ul li {
+        display: block;
+    }
+    .nav_links {
+        position: absolute;
+        background: beige;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: black;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav_links ul {
+        padding:30px; 
+    }
+}*/
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.gametypes {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+
+}
+p {
+    color:darkmagenta;
+    font-size: 14px;
+    font-weight:300;
+    line-height: 22px;
+    padding: 10px;
+
+    
+}
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+ 
+.gamecol {
+     flex-basis: 31%;
+     background:beige;
+     border-radius: 10px;
+     margin-bottom: 5%;
+     padding: 20px 12px;
+     box-sizing: border-box;
+     transition: 0.5s;
+     
+
+
+}
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.gamecol:hover {
+    box-shadow: 10px 10px 20px 10px rgba(255, 8, 202, 0.2);
+    
+
+}
+
+.gametext a{
+    text-decoration:none;
+}
+.gametext {
+    color: black;
+}
+
+/* code not working as it should
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}*/
+
+
+
+
+.gamestabs {
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+    color: black;
+}
+
+.gametabscol {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.gametabscol img {
+    width: 120%;
+
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:0.5s;
+}
+
+.layer:hover {
+    background: rgba(220, 226, 138, 0.664);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: beige;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer1 {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:0.5s;
+}
+
+.layer1:hover {
+    background: rgba(182, 94, 101, 0.7);
+}
+
+.layer1 h3{
+    width: 100%;
+    font-weight: 500;
+    color: beige;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer1:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer2 {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:0.5s;
+}
+
+.layer2:hover {
+    background: rgba(220, 223, 213, 0.445);
+}
+
+.layer2 h3{
+    width: 100%;
+    font-weight: 500;
+    color: beige;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer2:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
